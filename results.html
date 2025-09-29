@@ -1,30 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Search Results - FBFreaky</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            padding: 2em;
-        }
-        .result {
-            margin-bottom: 1.5em;
-        }
-        .result a {
-            font-size: 1.2em;
-            color: blue;
-            text-decoration: none;
-        }
-        .result p {
-            margin: 0.3em 0;
-        }
-    </style>
-</head>
-<body>
-    <h1>Search Results</h1>
-    <div id="results">Loading...</div>
+    <head>
+        <meta charset="UTF-8">
+        <title>Search Results - FBFreaky</title>
+        <link rel="icon" type="image/png" href="images/favicon.png">
 
-    <script src="results.js"></script>
-</body>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <div class="homepage-button">
+            <form action="index.html">
+                <button type="submit">
+                    <img src="images/homepage.svg" alt="Homepage">
+                </button>
+            </form>
+        </div>
+
+        <form id="internal-search-form">
+            <input type="text" id="search-input" placeholder="Search..." />
+            <button type="submit">Search</button>
+        </form>
+
+        <h1>Search Results</h1>
+
+        <div id="tabs">
+            <button class="tab-button active" data-tab="all">All</button>
+            <button class="tab-button" data-tab="videos">Videos</button>
+            <button class="tab-button" data-tab="images">Images</button>
+            <button class="tab-button" data-tab="books">Books</button>
+        </div>
+
+        <div id="tab-content">
+            <div class="tab-section" id="tab-all">
+                <h2>All Results</h2>
+                <div id="general-results"></div>
+            </div>
+
+            <div class="tab-section" id="tab-videos" style="display: none;">
+                <h2>Video Results</h2>
+                <div id="video-results"></div>
+            </div>
+
+            <div class="tab-section" id="tab-images" style="display: none;">
+                <h2>Image Results</h2>
+                <div id="image-results"></div>
+            </div>
+
+            <div class="tab-section" id="tab-books" style="display: none;">
+                <h2>Book Results</h2>
+                <div id="book-results"></div>
+            </div>
+        </div>
+
+        <div id="results">Loading...</div>
+
+        <script src="secrets.js"></script>
+        <script src="results.js"></script>
+        <script src="tabs.js"></script>
+
+    </body>
 </html>

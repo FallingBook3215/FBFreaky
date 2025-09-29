@@ -1,0 +1,193 @@
+body {
+
+    background-color: rgb(248, 243, 235);
+
+    font-family: Helvetica, sans-serif;
+    padding: 2em;
+}
+
+.result {
+    margin-bottom: 1.5em;
+}
+.result a {
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 800;
+    color: rgb(0, 102, 255);
+    text-decoration: none;
+}
+.result p {
+    margin: 0.3em 0;
+}
+
+.tab-button {
+  padding: 0.5em 1em;
+  border: none;
+  background-color: rgb(243, 224, 194);
+  cursor: pointer;
+  margin-right: 0.5em;
+  border-radius: 4px;
+}
+.tab-button.active {
+  background-color: rgb(221, 190, 141);
+}
+.tab-section {
+  display: none;
+}
+.tab-section.active {
+  display: block;
+}
+
+.homepage-button {
+    position: absolute;
+    top: 0;
+    right: 142px;
+    padding: 0px;
+    z-index: 1000;
+}
+.homepage-button form {
+    position: relative;
+    display: inline-block;
+}
+.homepage-button button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 128px;
+    height: 128px;
+    border: none;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+    z-index: 2;
+}
+.homepage-button img {
+    width: 128px;
+    height: 128px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+}
+
+#internal-search-form {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 20px auto;
+
+}
+#internal-search-form input {
+
+    position: absolute;
+    left: 25%;
+    top: 10%;
+
+    padding: 10px 16px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    width: 550px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+
+}
+#internal-search-form button {
+
+    position: absolute;
+    left: 64%;
+    top: 10%;
+
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#internal-search-form button:hover {
+    background-color: #0056b3;
+}
+
+#home-search-form input {
+
+    position: absolute;
+    left: 25%;
+    top: 60%;
+
+    padding: 10px 16px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    width: 550px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+
+}
+#search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+#home-search-form button {
+
+    position: absolute;
+    left: 64%;
+    top: 60%;
+
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#home-search-form button:hover {
+    background-color: #0056b3;
+}
+
+#home-header {
+    position: absolute;
+    left: 33%;
+    top: 35%;
+
+    width: 400px;
+    height: auto;
+}
+
+.github-button {
+    position: absolute;
+    top: 0;
+    left: 12px;
+    padding: 0px;
+    z-index: 1000;
+}
+.github-button form {
+    position: relative;
+    display: inline-block;
+}
+.github-button button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 137px;
+    height: 128px;
+    border: none;
+    padding: 0;
+    background: transparent;
+    cursor: pointer;
+    z-index: 2;
+}
+.github-button img {
+    width: 128px;
+    height: 128px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+}

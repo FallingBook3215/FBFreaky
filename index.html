@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>FBFreaky</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <form action="results.html" method="GET">
+    <div class="github-button">
+        <form action="https://github.com/FallingBook3215/FBFreaky" target="_blank">
+            <button type="submit">
+                <img src="images/github.jpeg" alt="Github">
+            </button>
+        </form>
+    </div>
+    <img src="images/header.svg" id="home-header" alt="Header">
+    <form action="results.html" method="GET" id="home-search-form">
         <input type="text" name="q" placeholder="Search..." />
         <button type="submit">Search</button>
     </form>
