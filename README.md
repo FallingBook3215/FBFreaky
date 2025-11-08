@@ -13,4 +13,4 @@ The current APIs are:
   - Archive.org
   - Github
 
-I'll probably make a video over this project so when it's finished I'll put the link here - :)
+I'll probably make a video over this project so when it's finished! I'll put the link here - :)
